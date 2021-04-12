@@ -3,7 +3,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     serviceUrl:
-      defaultZone: http://100.25.104.74:8761/eureka/
+      defaultZone: http://54.157.144.47:8761/eureka/
 server:
   port: 9090
 spring:
@@ -13,6 +13,6 @@ spring:
     gateway:
       routes:
         - id: todo-service
-          uri: http://100.25.104.74:8081/
+          uri: http://54.157.144.47:8081/
           predicates:
             - Path=/todo-service/**
